@@ -1,0 +1,27 @@
+.bin {
+    justify-content: center;
+    align-items: center;
+    min-height: 150px;
+    color: white;
+    display: none;
+}
+i {
+    margin-right: 15px;
+    
+}
+
+#greenBin {
+
+background-color: green;
+}
+
+#brownBin {
+background-color: brown;
+}
+#blackBin {
+background-color: black
+}
+#blueBin {
+background-color: blue;
+
+}
