@@ -5,7 +5,7 @@ Date.prototype.getWeek = function () {
 }
 
 var weekNumber = (new Date()).getWeek();
-//weekNumber = weekNumber + 2; //To test week inceases correclty
+//weekNumber = weekNumber - 3; //To test week inceases correclty
 var dayNames = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 var now = new Date();
 document.write(dayNames[now.getDay()] + " (" + weekNumber + ").");
@@ -65,16 +65,16 @@ switch (weekNumber) {
 // Bin combos
 
 function blueGreen() {
-    document.getElementById("blueBin").style.display = "flex";
-    document.getElementById("greenBin").style.display = "flex";
+    document.getElementById("binImg").style.display = "flex";
+    document.getElementById("binImg").src = "img/greenblue.png";
 }
 
 function allBins() {
-    document.getElementById("blackBin").style.display = "flex";
-    document.getElementById("brownBin").style.display = "flex";
-    document.getElementById("greenBin").style.display = "flex";
+    document.getElementById("binImg").style.display = "flex";
+    document.getElementById("binImg").src = "img/brownblackgreen.png";
 }
 
 function onlyBlue() {
-    document.getElementById("blueBin").style.display = "flex";
+    document.getElementById("binImg").style.display = "flex";
+    document.getElementById("binImg").src = "img/blue.png";
 }
