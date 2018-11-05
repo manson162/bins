@@ -8,8 +8,47 @@ var weekNumber = (new Date()).getWeek();
 //weekNumber = weekNumber - 3; //To test week inceases correclty
 var dayNames = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 var now = new Date();
-document.write(dayNames[now.getDay()] + " (" + weekNumber + ").");
 
+
+
+function countDown() {
+    if (dayNames[now.getDay()] === "Monday") {
+        document.getElementById("countDown").innerHTML = "1";
+        document.getElementById("day").innerHTML = " day";
+    } 
+    else if (dayNames[now.getDay()] === "Tuesday") {
+        document.getElementById("in").style.display = "none";
+        document.getElementById("today").style.display = "";
+
+    }
+
+    else if (dayNames[now.getDay()] === "Wednesday") {
+        document.getElementById("countDown").innerHTML = "6";
+
+    }
+
+    else if (dayNames[now.getDay()] === "Thursday") {
+        document.getElementById("countDown").innerHTML = "5";
+
+    }
+    else if (dayNames[now.getDay()] === "Friday") {
+        document.getElementById("countDown").innerHTML = "4";
+
+    }
+    else if (dayNames[now.getDay()] === "Saturday") {
+        document.getElementById("countDown").innerHTML = "3";
+
+    }
+    else if (dayNames[now.getDay()] === "Sunday") {
+        document.getElementById("countDown").innerHTML = "2";
+
+    }
+
+
+
+
+}
+countDown()
 
 //Display bins due to go out
 
